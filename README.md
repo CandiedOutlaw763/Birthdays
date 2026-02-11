@@ -20,6 +20,6 @@ The goal of this project was to build a web application using **Flask** (a Pytho
 
 * `app.py`: The main controller application. It handles the web routes (`/`) and interacts with the SQL database using the CS50 library.
 * `birthdays.db`: A SQLite database containing the `birthdays` table (columns: `id`, `name`, `month`, `day`).
-* `templates/index.html`: The HTML template that renders the form and the table of birthdays.
-* `static/styles.css`: CSS file for styling the application.
+* `index.html`: The HTML template that renders the form and the table of birthdays.
+* `styles.css`: CSS file for styling the application.
 
