@@ -1,21 +1,25 @@
-Birthdays
-A web-based application to track and manage birthdays, developed as a solution for the CS50 "Birthdays" problem set. This application allows users to view a list of saved birthdays and add new ones to a database.
+# Birthdays 🎂
 
-Description
-This project uses Flask (a Python microframework) to serve a dynamic web page where users can interact with a SQLite database. The application features a simple frontend built with HTML and CSS, and a backend that handles data insertion and retrieval.
+This repository contains my solution for the **Birthdays** problem set from [CS50: Introduction to Computer Science](https://cs50.harvard.edu/x/). It is a simple web application that allows users to track and manage a list of birthdays using a SQLite database.
 
-Tech Stack
-Backend: Python, Flask
+## 📝 Description
 
-Database: SQLite (managed via the CS50 SQL library)
+The goal of this project was to build a web application using **Flask** (a Python microframework) to enable users to:
+1.  **View** a list of people and their birthdays.
+2.  **Add** new entries to the database via a web form.
+3.  Ensure data persistence using a **SQLite** database.
 
-Frontend: HTML, CSS
+## 🛠️ Built With
 
-Project Structure
-app.py: The main controller script. It handles routing (/) and methods (GET to display birthdays, POST to add new ones).
+* **Python** (Backend logic)
+* **Flask** (Web framework)
+* **SQL** (SQLite database for storage)
+* **HTML/CSS** (Frontend structure and styling)
 
-birthdays.db: A SQLite database containing a birthdays table with columns for id, name, month, and day.
+## 📂 Project Structure
 
-index.html: The HTML template that provides the form for inputting data and a table for displaying the list of birthdays.
+* `app.py`: The main controller application. It handles the web routes (`/`) and interacts with the SQL database using the CS50 library.
+* `birthdays.db`: A SQLite database containing the `birthdays` table (columns: `id`, `name`, `month`, `day`).
+* `templates/index.html`: The HTML template that renders the form and the table of birthdays.
+* `static/styles.css`: CSS file for styling the application.
 
-styles.css: Custom CSS to style the table and form elements.
